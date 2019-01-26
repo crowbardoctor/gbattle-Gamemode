@@ -1,0 +1,29 @@
+"gamemode"
+{
+	"base"		"base"
+	"title"		"gbattle"
+	"maps"		"gb_"
+	"menusystem"	"1"
+	"workshopid"	""
+
+"settings"
+	{
+		1
+		{
+			"name"		"gb_maxscore"
+			"text"		"Max Score"
+			"help"		"The maxiumum number of score before a winning"
+			"type"		"numeric"
+			"default"	"2"
+		}
+		2
+		{
+			"name"	"gb_maxstrikes"
+			"text"	"Max Strikes"
+			"help"	"The maximum amount of detrements a player can cause before being kicked"
+			"type"	"numeric"
+			"default"	"3"
+		}
+
+
+}
