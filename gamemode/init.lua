@@ -41,6 +41,21 @@ function GM:PlayerSpawn( ply )
 	ply:ChatPrint( "Press F1 to change Class" )
 end
 
+function GM:PlayerSpawn( ply )
+	ply:SetModel("models/player/group01/male_07.mdl")
+	player_manager.SetPlayerClass( ply, "player_b1" )
+	ply:SetMaxHealth( 100 )
+	ply:SetHealth( 100 )
+	ply:SetRunSpeed(300)
+	ply:SetWalkSpeed(150)
+	ply:SetNWInt( "LegHealth", 100 )
+	ply.LegHealth = ply:GetNWInt( "LegHealth", 100)
+	ply:ClassGear()
+	ply:SetViewOffset(Vector(0,0,58))
+	ply:SetupHands() -- Create the hands and call GM:PlayerSetHandsModel
+	ply:ChatPrint( "Press F1 to change Class" )
+end
+
 function GM:PlayerDeathThink( ply )
 	if ( ply.NextSpawnTime and ply.NextSpawnTime > CurTime() or MatchStatus != 1 ) then return end
 	if ply:KeyPressed( IN_ATTACK ) then
