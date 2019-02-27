@@ -30,7 +30,7 @@
 			"text"		"Max Players"
 			"help"		"The maxiumum number of players"
 			"type"		"numeric"
-			"default"	"2"
+			"default"	"4"
 		}
 
 
