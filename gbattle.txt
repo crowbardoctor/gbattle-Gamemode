@@ -24,6 +24,14 @@
 			"type"	"numeric"
 			"default"	"3"
 		}
+		3
+		{
+			"name"		"maxplayers"
+			"text"		"Max Players"
+			"help"		"The maxiumum number of players"
+			"type"		"numeric"
+			"default"	"2"
+		}
 
 
 }
