@@ -1,7 +1,7 @@
 "gamemode"
 {
 	"base"		"base"
-	"title"		"gbattle"
+	"title"		"gbattlesw"
 	"maps"		"gb_"
 	"menusystem"	"1"
 	"workshopid"	""
